@@ -1,0 +1,200 @@
+/* BASE STYLING */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #e8f0ff, #f7f9ff);
+  color: #333;
+}
+
+/* HEADER */
+header.hero {
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin: auto;
+  display: block;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+}
+
+.btn {
+  background: #ffffff;
+  color: #182848;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #e0e0e0;
+  transform: scale(1.05);
+}
+
+/* SECTIONS (OBJECTIVE, ABOUT, CONTACT, ETC.) */
+section {
+  max-width: 1000px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+  transition: 0.3s;
+  animation: fadeIn 1s ease-in;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  text-align: center;
+  color: #4b6cb7;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 17px;
+}
+.about p {
+  font-size: 17px;
+  line-height: 1.7;
+  text-align: justify;
+  color: #444;
+}
+
+.about strong {
+  color: #182848;
+  font-weight: 600;
+}
+
+.about em {
+  color: #4b6cb7;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* SKILLS */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill-tags span {
+  background: linear-gradient(to right, #d6eaff, #eef6ff);
+  color: #182848;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.skill-tags span:hover {
+  background: #c8ddff;
+  transform: scale(1.05);
+}
+
+/* PROJECTS SECTION */
+.projects {
+  padding: 60px 20px;
+  background: #f7faff;
+}
+
+.projects h2 {
+  text-align: center;
+  color: #4b6cb7;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 25px 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 6px solid #4b6cb7;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  color: #4b6cb7;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.project-card strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* CONTACT SECTION */
+.contact p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+  background: #182848;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
