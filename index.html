@@ -2,16 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Sanika Dashrath Gavhane - Java developer skilled in SQL, web development, and machine learning projects.">
   <title>Sanika Gavhane | Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <nav class="top-nav" aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <header class="hero">
     <img src="images/profile.jpg" alt="Sanika's Photo" class="profile-img">
     <h1>Sanika Dashrath Gavhane</h1>
     <p>Java Developer | SQL | Web Learner</p>
-    <a href="resume/SanikaGavhane.pdf" class="btn" target="_blank">Download Resume</a>
+    <div class="hero-actions">
+      <a href="resume/SanikaGavhane.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download Resume</a>
+      <a href="#projects" class="btn btn-secondary">View Projects</a>
+    </div>
   </header>
 
   <section class="objective">
@@ -20,14 +32,14 @@
     To secure a challenging position as a Software Developer where I can apply my skills in Java, SQL, and full-stack development to solve real-world problems, contribute to impactful projects, and continuously grow as a technical professional in a dynamic organization.
   </p>
 
-  <p style="margin-top: 15px; font-style: italic; color: #4b6cb7; font-size: 17px;">
+  <p class="quote-text">
     "Code. Learn. Repeat. 💻🚀"<br>
-    <span style="color: #888;">"Keep pushing your limits. The only barrier is your belief 👩‍💻"</span>
+    <span class="quote-subtext">"Keep pushing your limits. The only barrier is your belief 👩‍💻"</span>
   </p>
 </section>
 
 
-  <section class="about">
+  <section class="about" id="about">
   <h2>About Me</h2>
   <p>
     Hello! I’m <strong>Sanika Dashrath Gavhane</strong>, a passionate and self-driven developer who believes in turning logic into living code. From debugging stubborn bugs to designing clean layouts, I enjoy every step of building meaningful software.
@@ -41,13 +53,13 @@
     I don’t just write code — I solve problems. Whether it’s building a backend with Node.js or optimizing a database, I approach every task with logic, patience, and a cup of chai. ☕
   </p>
 
-  <p style="font-style: italic; color: #4b6cb7;">
+  <p class="about-quote">
     “Still learning, still exploring — one line of code at a time.”
   </p>
 </section>
 
 
-  <section class="skills">
+  <section class="skills" id="skills">
     <h2>My Skills</h2>
     <div class="skill-tags">
       <span>Java</span>
@@ -59,7 +71,7 @@
     </div>
   </section>
 
-  <section class="projects">
+  <section class="projects" id="projects">
   <h2>Projects</h2>
   <div class="project-list">
 
@@ -67,28 +79,31 @@
       <h3>🩺 Diabetes Risk Prediction (ML)</h3>
       <p>A machine learning model using logistic regression and decision trees to predict the risk of diabetes based on medical data like glucose, BMI, and age. Built using Python, pandas, sklearn, and Flask for deployment.</p>
       <p><strong>Tech Stack:</strong> Python, Machine Learning</p>
+      <a class="project-link" href="#contact">Request project demo →</a>
     </div>
 
     <div class="project-card">
       <h3>🎬 Movie Recommendation System (Node.js)</h3>
       <p>A web application that recommends movies based on user interests and ratings. Built using Node.js, Express, and MongoDB with custom recommendation logic.</p>
       <p><strong>Tech Stack:</strong> Node.js, Express.js, MYSQL, HTML/CSS</p>
+      <a class="project-link" href="#contact">Request project demo →</a>
     </div>
 
     <div class="project-card">
       <h3>🌐 Portfolio Website</h3>
       <p>This personal portfolio website showcasing my skills, projects, and resume. Built with HTML and CSS for clean and responsive design.</p>
       <p><strong>Tech Stack:</strong> HTML, CSS</p>
+      <a class="project-link" href="#contact">Request project demo →</a>
     </div>
 
   </div>
 </section>
 
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <h2>Contact</h2>
-    <p><strong>Email:</strong> sanikagavhane512@example.com</p>
-    <p><strong>Phone:</strong> +91-8329382680</p>
+    <p><strong>Email:</strong> <a href="mailto:sanikagavhane512@example.com">sanikagavhane512@example.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+918329382680">+91-8329382680</a></p>
     <p><strong>Location:</strong> Pune, Maharashtra, India</p>
   </section>
 
