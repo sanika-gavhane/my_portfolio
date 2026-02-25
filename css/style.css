@@ -1,10 +1,42 @@
 /* BASE STYLING */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, #e8f0ff, #f7f9ff);
   color: #333;
+}
+
+/* TOP NAV */
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  background: rgba(24, 40, 72, 0.95);
+  padding: 10px 16px;
+  backdrop-filter: blur(6px);
+}
+
+.top-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.top-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* HEADER */
@@ -38,11 +70,18 @@ h1 {
   letter-spacing: 0.5px;
 }
 
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
 .btn {
   background: #ffffff;
   color: #182848;
   padding: 12px 24px;
-  margin-top: 20px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
@@ -53,6 +92,16 @@ h1 {
 .btn:hover {
   background: #e0e0e0;
   transform: scale(1.05);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 /* SECTIONS (OBJECTIVE, ABOUT, CONTACT, ETC.) */
@@ -88,6 +137,18 @@ p {
   line-height: 1.6;
   font-size: 17px;
 }
+
+.quote-text {
+  margin-top: 15px;
+  font-style: italic;
+  color: #4b6cb7;
+  font-size: 17px;
+}
+
+.quote-subtext {
+  color: #888;
+}
+
 .about p {
   font-size: 17px;
   line-height: 1.7;
@@ -104,6 +165,11 @@ p {
   color: #4b6cb7;
   font-style: normal;
   font-weight: 500;
+}
+
+.about-quote {
+  font-style: italic;
+  color: #4b6cb7;
 }
 
 /* SKILLS */
@@ -183,10 +249,31 @@ p {
   font-weight: 600;
 }
 
+.project-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #4b6cb7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
 /* CONTACT SECTION */
 .contact p {
   font-size: 16px;
   margin: 10px 0;
+}
+
+.contact a {
+  color: #182848;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
 }
 
 /* FOOTER */
@@ -205,6 +292,16 @@ footer {
 
 /*  Mobile Devices (max-width: 480px) */
 @media screen and (max-width: 480px) {
+  .top-nav {
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .top-nav a {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
   header.hero {
     padding: 40px 15px;
   }
